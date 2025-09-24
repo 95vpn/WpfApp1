@@ -73,7 +73,20 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Le has dado al botón de nuevo");
+            //MessageBox.Show("Le has dado al botón de nuevo");
+            Console.WriteLine("Le has dado al boton 2!!");
+        }
+
+        /*
+        private void Panel_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Le has dado al panel");
+        }
+        */
+
+        private void Panel_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Console.WriteLine("Le has dado al panel");
         }
     }
 }
