@@ -30,11 +30,13 @@ namespace WpfApp1
 
             Button btn = new Button();
             btn.Width = 250;
-            btn.Height = 110;
+            //btn.Height = 110;
             btn.Background = Brushes.Brown;
             btn.Margin = new Thickness(0, 350, 0, 0);
 
             WrapPanel miWrap = new WrapPanel();
+
+            Grid.SetColumn(miWrap, 1);
 
             TextBlock textBlock1 = new TextBlock();
 
