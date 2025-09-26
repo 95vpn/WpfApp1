@@ -13,7 +13,8 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -21,11 +22,12 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="0" Content="Enviar !!" Width="250" Height="100" FontSize="24"></Button>
-        <Button Grid.Column="1"  Background="Coral" FontSize="30" >
+        <Button Grid.Column="0" Grid.Row="0" Content="Enviar !!" Width="250" Height="100" FontSize="24"></Button>
+        <Button Grid.Column="0" Grid.Row="1"  Background="Coral" FontSize="30" >
 
             <WrapPanel >
                 <TextBlock Foreground="Aqua"><Run Text="Hola"/></TextBlock>
@@ -34,13 +36,40 @@
             </WrapPanel>
         </Button>
 
-        <StackPanel Grid.Column="2" Grid.Row="2" x:Name="Panel" PreviewMouseLeftButtonDown="Panel_PreviewMouseLeftButtonDown"  Width="300" Height="300" Background="Aqua">
+        <StackPanel Grid.Column="1" Grid.Row="1" x:Name="Panel" PreviewMouseLeftButtonDown="Panel_PreviewMouseLeftButtonDown"  Width="300" Height="300" Background="Aqua">
 
             <Button Content="Dale" Margin="15" Width="150"></Button>
             <Button Content="Dale 2" Margin="15" Width="150" Click="Button_Click"></Button>
             <Button Content="Dale 3" Margin="15" Width="150"></Button>
 
         </StackPanel>
+
+        <TextBlock Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26">Juan</TextBlock>
+
+        <Grid Grid.Column="3" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="0" Grid.Row="0" Background="Coral" >Button1</Button>
+            <Button Grid.Column="1" Grid.Row="1" Background="Coral"  >Button2</Button>
+            <Button Grid.Column="2" Grid.Row="2"  Background="Coral"  >Button3</Button>
+            <Button Grid.Column="3" Grid.Row="3" Background="Coral"  >Button4</Button>
+        </Grid>
     </Grid>
 
 
