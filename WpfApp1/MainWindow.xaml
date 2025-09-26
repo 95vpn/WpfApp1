@@ -13,10 +13,19 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
+            
         </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
         <Button Grid.Column="0" Content="Enviar !!" Width="250" Height="100" FontSize="24"></Button>
-        <Button Grid.Column="1" Background="Coral" FontSize="30" >
+        <Button Grid.Column="1"  Background="Coral" FontSize="30" >
 
             <WrapPanel >
                 <TextBlock Foreground="Aqua"><Run Text="Hola"/></TextBlock>
@@ -25,7 +34,7 @@
             </WrapPanel>
         </Button>
 
-        <StackPanel Grid.Column="2" x:Name="Panel" PreviewMouseLeftButtonDown="Panel_PreviewMouseLeftButtonDown"  Width="300" Height="300" Background="Aqua">
+        <StackPanel Grid.Column="2" Grid.Row="2" x:Name="Panel" PreviewMouseLeftButtonDown="Panel_PreviewMouseLeftButtonDown"  Width="300" Height="300" Background="Aqua">
 
             <Button Content="Dale" Margin="15" Width="150"></Button>
             <Button Content="Dale 2" Margin="15" Width="150" Click="Button_Click"></Button>
